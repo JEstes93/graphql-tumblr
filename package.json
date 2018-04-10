@@ -1,0 +1,16 @@
+{
+  "name": "graphql-tumblr",
+  "version": "1.0.0",
+  "description": "A GraphQL wrapper for Tumblr's API",
+  "main": "index.js",
+  "repository": "https://github.com/JEstes93/graphql-tumblr.git",
+  "author": "John Estes <jestes93development@gmail.com> (https://github.com/JEstes93)",
+  "license": "MIT",
+  "dependencies": {
+    "graphql": "^0.13.2",
+    "tumblr.js": "^1.1.1"
+  },
+  "devDependencies": {
+    "jest": "^22.4.3"
+  }
+}
