@@ -24,15 +24,6 @@ or
 yarn add graphql-tumblr
 ```
 
-Install dependencies with:
-
-```sh
-npm install
-```
-or
-```sh
-yarn install
-```
 ## Usage
 
 The module returns a function which initializes Tumblr API access with a consumer/app API key and secret.

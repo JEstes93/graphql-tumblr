@@ -6,6 +6,21 @@
   "repository": "https://github.com/JEstes93/graphql-tumblr.git",
   "author": "John Estes <jestes93development@gmail.com> (https://github.com/JEstes93)",
   "license": "MIT",
+  "keywords": [
+    "tumblr",
+    "graphql",
+    "tumblr-graphql",
+    "graphql-tumblr",
+    "tumblr.js",
+    "graphql.js",
+    "wrapper",
+    "api",
+    "graphql-wrapper",
+    "api-wrapper",
+    "tumblr-wrapper",
+    "graphql-tumblr-wrapper",
+    "tumblr-graphql-wrapper"
+  ],
   "dependencies": {
     "graphql": "^0.13.2",
     "tumblr.js": "^1.1.1"
