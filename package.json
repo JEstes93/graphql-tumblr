@@ -1,6 +1,6 @@
 {
   "name": "graphql-tumblr",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A GraphQL wrapper for Tumblr's API",
   "main": "./src/index.js",
   "repository": "https://github.com/JEstes93/graphql-tumblr.git",
