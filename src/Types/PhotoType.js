@@ -6,7 +6,7 @@ const {
 
 const PhotoSizeType = require('./PhotoSizeType');
 
-const PhotoType = new GraphQLObjectType({
+module.exports = new GraphQLObjectType({
     name: 'Photo',
     fields: () => ({
         alt_sizes: {
@@ -23,5 +23,3 @@ const PhotoType = new GraphQLObjectType({
         }
     })
 });
-
-module.exports = PhotoType;

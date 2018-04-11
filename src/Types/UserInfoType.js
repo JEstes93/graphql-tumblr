@@ -10,7 +10,10 @@ const {
 
 const UserInfoBlogsType = require('./UserInfoBlogsType');
 
-const UserInfoType = new GraphQLObjectType({
+/**
+ * Information about the querying user
+ */
+module.exports = new GraphQLObjectType({
 	name: "UserInfo",
 	description: "Information about the querying user.",
 	fields: () => ({
@@ -41,5 +44,3 @@ const UserInfoType = new GraphQLObjectType({
 		}
 	})
 });
-
-module.exports = UserInfoType;

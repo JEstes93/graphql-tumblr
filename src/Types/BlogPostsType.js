@@ -2,7 +2,7 @@ const { GraphQLObjectType, GraphQLInt, GraphQLList } = require("graphql");
 const PostType = require('./PostType');
 const BlogSimpleType = require('./BlogSimpleType');
 
-const BlogPostsType = new GraphQLObjectType({
+module.exports = new GraphQLObjectType({
 	name: "BlogPosts",
 	description: "Returns list of posts that this blog likes.",
 	fields: () => ({
@@ -20,5 +20,3 @@ const BlogPostsType = new GraphQLObjectType({
 		}
 	})
 });
-
-module.exports = BlogPostsType;

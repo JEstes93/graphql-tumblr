@@ -36,7 +36,6 @@ module.exports = new GraphQLObjectType({
           type: BlogType,
           description: "Information on the blog who made the post.",
         },
-        
 
         //API actually returns an object for this... Could be more complex?
         post_id: {

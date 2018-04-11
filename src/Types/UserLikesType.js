@@ -7,9 +7,12 @@ const {
 
 const PostType = require('./PostType');
 
-const UserLikesType = new GraphQLObjectType({
+/**
+ * List of posts the authenticated user likes
+ */
+module.exports = new GraphQLObjectType({
     name: 'UserLikes',
-    description: 'Returns list of posts that authenticated user likes',
+    description: 'Returns list of posts that authenticated user likes.',
     fields: () => ({
       liked_count: {
         type: GraphQLInt
@@ -19,5 +22,3 @@ const UserLikesType = new GraphQLObjectType({
       }
     })
 });
-
-module.exports = UserLikesType;

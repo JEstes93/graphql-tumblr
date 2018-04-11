@@ -8,7 +8,7 @@ const {
     GraphQLFloat
 } = require("graphql");
 
-const UserInfoBlogsType = new GraphQLObjectType({
+module.exports = new GraphQLObjectType({
 	name: "UserInfoBlogs",
 	fields: () => ({
 		admin: {
@@ -141,5 +141,3 @@ const UserInfoBlogsType = new GraphQLObjectType({
 		}
 	})
 });
-
-module.exports = UserInfoBlogsType;
