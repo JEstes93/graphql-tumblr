@@ -2,7 +2,7 @@
   "name": "graphql-tumblr",
   "version": "1.0.1",
   "description": "A GraphQL wrapper for Tumblr's API",
-  "main": "index.js",
+  "main": "./src/index.js",
   "repository": "https://github.com/JEstes93/graphql-tumblr.git",
   "author": "John Estes <jestes93development@gmail.com> (https://github.com/JEstes93)",
   "license": "MIT",
@@ -27,5 +27,9 @@
   },
   "devDependencies": {
     "jest": "^22.4.3"
+  },
+  "scripts": {
+    "build": "npm pack",
+    "move": "copy graphql-tumblr-*.tgz ..\\TWTesting\\"
   }
 }
