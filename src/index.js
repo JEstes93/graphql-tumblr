@@ -34,7 +34,7 @@ module.exports = options => {
 				 * @returns {GraphQLSchema}
 				 */
 				Full: creds =>
-					require(__dirname + "/src/Schemas/FullSchema")(
+					require(__dirname + "/Schemas/FullSchema")(
 						tumblr.createClient({
 							...options,
 							...creds,
@@ -45,7 +45,7 @@ module.exports = options => {
 				 * Only includes endpoints accessible with just an API key
 				 * @type {GraphQLSchema}
 				 */
-				API_Only: require(__dirname + "/src/Schemas/LimitedSchema")(
+				API_Only: require(__dirname + "/Schemas/LimitedSchema")(
 					tumblr.createClient({ ...options, returnPromises: true })
 				)
 			}

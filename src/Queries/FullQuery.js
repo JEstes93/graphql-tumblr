@@ -16,7 +16,7 @@ const {
     UserInfoType,
     UserLikesType,
     UserFollowingType,
-} = require('../CoreTypes');
+} = require('../Core/CoreTypes');
 
 /**
  * Returns a query with full access to API
