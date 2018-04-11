@@ -23,13 +23,16 @@
   ],
   "dependencies": {
     "graphql": "^0.13.2",
-    "tumblr.js": "^1.1.1"
+    "tumblr.js": "^1.1.1",
+    "yarn-run-all": "^3.1.1"
   },
   "devDependencies": {
     "jest": "^22.4.3"
   },
   "scripts": {
-    "build": "npm pack",
-    "move": "copy graphql-tumblr-*.tgz ..\\TWTesting\\"
+    "clear": "del /f graphql-tumblr-*.tgz",
+    "make": "yarn pack",
+    "move": "copy graphql-tumblr-*.tgz ..\\TWTesting\\",
+    "build": "run-s clear make move"
   }
 }
