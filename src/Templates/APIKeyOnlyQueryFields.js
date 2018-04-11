@@ -1,22 +1,9 @@
-// const tumblr = require("tumblr.js");
-
-// const client = tumblr.createClient({
-// 	consumer_key: process.env.consumer_key,
-// 	consumer_secret: process.env.consumer_secret,
-// 	// token: process.env.token,
-// 	// token_secret: process.env.token_secret
-// });
-
-// client.returnPromises();
-
 const {
     GraphQLObjectType,
     GraphQLInt,
     GraphQLBoolean,
     GraphQLList,
-    GraphQLFloat,
     GraphQLString,
-    GraphQLInterfaceType,
 } = require('graphql');
 
 const {
@@ -24,7 +11,7 @@ const {
     BlogLikesType,
     BlogPostsType,
     PostType,
-} = require('../CoreTypes');
+} = require('../Core/CoreTypes');
 
 /**
  * Returns query fields available with only an API key, and not full OAuth1.0a authentication
