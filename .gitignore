@@ -61,5 +61,8 @@ typings/
 .vscode
 
 #Unnecessary files
-CoreTypes.js
 Tests/
+_*
+./index.js
+graphql-tumblr-*
+output.txt
