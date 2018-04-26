@@ -6,7 +6,7 @@ const { GraphQLSchema } = require('graphql');
  * @typedef {Object} ConstructorOptions
  * @property {String} consumer_key App's API key
  * @property {String} consumer_secret App's API secret
- * 
+ *
  * Full Schema Constructor options object
  * @typedef {Object} FullSchemaOptions
  * @property {String} token App's API key

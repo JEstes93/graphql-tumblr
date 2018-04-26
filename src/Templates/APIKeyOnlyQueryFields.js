@@ -1,6 +1,7 @@
 const {
     GraphQLObjectType,
     GraphQLInt,
+    GraphQLFloat,
     GraphQLBoolean,
     GraphQLList,
     GraphQLString,
@@ -37,8 +38,8 @@ module.exports = client => ({
                 type: GraphQLString,
                 description: "The blog name to search. (Must be full tumblr address)",
             },
-            limit: { 
-                type: GraphQLInt, 
+            limit: {
+                type: GraphQLInt,
                 description: "The number of posts to return. (1-20, inclusive, default is 20)"
             },
             num: {
@@ -66,8 +67,8 @@ module.exports = client => ({
                 type: GraphQLString,
                 description: "If set, only return posts that have the specified tag. (Defaults to return any/all tags)",
             },
-            limit: { 
-                type: GraphQLInt, 
+            limit: {
+                type: GraphQLInt,
                 description: "The number of posts to return. (1-20, inclusive, default is 20)"
             },
             offset: {
@@ -85,7 +86,7 @@ module.exports = client => ({
                 "(Returns all posts by default. Valid types: html, text, or raw)",
             },
             id: {
-                type: GraphQLInt,
+                type: GraphQLFloat,
                 description: "Specific post ID to return. If set, only returns a single post.",
             },
             reblog_info: {
@@ -107,8 +108,8 @@ module.exports = client => ({
                 type: GraphQLString,
                 description: "If set, only return posts that have the specified tag. (Defaults to return all posts)",
             },
-            limit: { 
-                type: GraphQLInt, 
+            limit: {
+                type: GraphQLInt,
                 description: "The number of posts to return. (1-20, inclusive, default is 20)",
             },
             before: {
