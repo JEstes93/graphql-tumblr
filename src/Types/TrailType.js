@@ -4,8 +4,8 @@ const {
 	GraphQLInt,
 	GraphQLString,
 	GraphQLList,
-    GraphQLBoolean,
-    GraphQLFloat
+  GraphQLBoolean,
+  GraphQLFloat
 } = require("graphql");
 
 const BlogType = require('./BlogType');
@@ -36,7 +36,6 @@ module.exports = new GraphQLObjectType({
           type: BlogType,
           description: "Information on the blog who made the post.",
         },
-
         //API actually returns an object for this... Could be more complex?
         post_id: {
           type: GraphQLFloat,

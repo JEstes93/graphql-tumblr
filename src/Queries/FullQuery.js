@@ -38,8 +38,8 @@ module.exports = client => new GraphQLObjectType({
             type: GraphQLList(PostType),
             description: 'Returns dashboard feed posts for the querying user.',
             args: {
-                limit: { 
-                    type: GraphQLInt, 
+                limit: {
+                    type: GraphQLInt,
                     description: "The number of posts to return. (1-20, inclusive, default is 20)"
                 },
                 offset: {
@@ -94,8 +94,8 @@ module.exports = client => new GraphQLObjectType({
             type: UserFollowingType,
             description: 'Returns blogs followed by authenticated user',
             args: {
-                limit: { 
-                    type: GraphQLInt, 
+                limit: {
+                    type: GraphQLInt,
                     description: "The number of blogs to return. (1-20, inclusive, default is 20)"
                 },
                 offset: {

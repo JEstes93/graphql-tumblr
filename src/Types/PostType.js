@@ -4,8 +4,8 @@ const {
 	GraphQLInt,
 	GraphQLString,
 	GraphQLList,
-    GraphQLBoolean,
-    GraphQLFloat
+  GraphQLBoolean,
+  GraphQLFloat
 } = require("graphql");
 
 const TrailType = require('./TrailType');
@@ -38,6 +38,7 @@ module.exports = new GraphQLObjectType({
 		},
 		photos: {
 			type: GraphQLList(PhotoType),
+				  defaultValue:"jarda",
 			description: "List of photos that this post contains.",
 		},
 		image_permalink: {
@@ -47,6 +48,14 @@ module.exports = new GraphQLObjectType({
 		link_url: {
 			type: GraphQLString,
 			description: "URL that this post links to.",
+		},
+		video_url: {
+			type: GraphQLString,
+			description: "This video's URL.",
+		},
+		thumbnail_url: {
+			type: GraphQLString,
+			description: "This video's thumbnail URL.",
 		},
 		trail: {
 			type: GraphQLList(TrailType),

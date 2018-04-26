@@ -62,7 +62,7 @@ module.exports = client => new GraphQLObjectType({
         },
 
         /**
-         * Still need: 
+         * Still need:
          * blogAvatar - ?!?!?!?
          * blogQueue
          * blogDrafts
@@ -76,6 +76,6 @@ module.exports = client => new GraphQLObjectType({
             client.createAudioPost
             client.createVideoPost
         */
-        
+
     })
 });

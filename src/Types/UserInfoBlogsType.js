@@ -4,8 +4,8 @@ const {
 	GraphQLInt,
 	GraphQLString,
 	GraphQLList,
-    GraphQLBoolean,
-    GraphQLFloat
+  GraphQLBoolean,
+  GraphQLFloat
 } = require("graphql");
 
 module.exports = new GraphQLObjectType({
